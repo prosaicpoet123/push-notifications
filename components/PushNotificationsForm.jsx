@@ -4,7 +4,6 @@ import { Component } from 'react';
 class PushNotificationsForm extends Component {
     handleOnSubmit(e) {
         e.preventDefault();
-        console.log(e.target.pushMessage.value);
         const options = {
             notification: {
                 title: 'Example Title',
