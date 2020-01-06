@@ -63,8 +63,6 @@ app.prepare().then(() => {
             })
         }
 
-        console.log(req.body);
-
         triggerPushMsg(pushSubscription, JSON.stringify(req.body))
         .then(() => {
             res.setHeader('Content-Type', 'application/json');
