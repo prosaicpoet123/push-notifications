@@ -24,6 +24,9 @@ webpush.setVapidDetails(
     vapidKeys.privateKey
 );
 
+// TODO: this is a static pushSubscription object for now, ideally I would be storing and retrieving these from
+// a database
+
 const pushSubscription = {
     endpoint: 'https://fcm.googleapis.com/fcm/send/cqXe5cuNrmg:APA91bF5Hzftl3ET3-2WEmKcArNPMsN-8CNOCQFeoSF2yJwQC7RY8vyVXIwy3KTeCyIVxkz4wAFv7e9-N7DTBQbtrolm0lYDUJ6k-sz6U2XcC9kkW0OuQ4wyPIhLsEusIDmVQVeNZdT4',
     expirationTime: null,
