@@ -1,8 +1,14 @@
 import PushNotificationsForm from '../components/PushNotificationsForm';
 
 const Index = () => (
-    <div>
-        <PushNotificationsForm />
+    <div className="columns">
+        <div className="column" />
+        <div className="column">
+            <div className="container">
+                <PushNotificationsForm />
+            </div>
+        </div>
+        <div className="column" />
     </div>
 );
 
